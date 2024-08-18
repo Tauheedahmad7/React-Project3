@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navtext::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(197, 18, 18);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+
+.navtext:hover::after{
+    width: 100%;
+}
+
+#btn::after{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.767);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+}
+#btn:hover::after{
+    transform: translateY(0%);
+    border-radius: 0px;
+}
+#btn span{
+    transition: all ease 0.3s;
+}
+
+#btn:hover span{
+color: #FF8676;
+}
